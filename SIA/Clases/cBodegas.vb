@@ -1,5 +1,11 @@
 ﻿Imports System.ComponentModel
 Imports cConexion
+
+
+''' <summary>
+''' Pruyeba de git
+''' </summary>
+
 Public Class cBodegas
     Implements IDataErrorInfo
     Private oCatalogoBD As New cCatalogoBaseDatos

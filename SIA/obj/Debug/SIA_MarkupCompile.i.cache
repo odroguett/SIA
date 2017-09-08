@@ -4,17 +4,17 @@
 winexe
 VB
 .vb
-C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\SIA\obj\Debug\
+C:\Users\odrog\Source\Repos\SIA\SIA\obj\Debug\
 SIA
 none
 false
 
-C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\SIA\Application.xaml
+C:\Users\odrog\Source\Repos\SIA\SIA\Application.xaml
 26-1355594280
 
 48-873051035
-18896752826
+181077508277
 ButonStyle.xaml;ButonStyle1.xaml;cbStyle.xaml;DataGridHeaderStyle.xaml;MsgStyle.xaml;SBDiccionario.xaml;StyleCanvas.xaml;TextBlockStyle.xaml;MainWindow.xaml;TextBlockStyle1.xaml;TextBox.xaml;UBodegas.xaml;UClientes.xaml;UInventario.xaml;uMantenciones.xaml;UProduccion.xaml;UProductos.xaml;uProveedores.xaml;uValidador.xaml;UVentas.xaml;WDetalleBodega.xaml;WDetalleInventario.xaml;WDetalleProduccionProducto.xaml;WGastos.xaml;Window1.xaml;WVentas.xaml;
 
-False
+True
 

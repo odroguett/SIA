@@ -115,3 +115,7 @@ C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\SIA\obj\Debug\WDetalleI
 C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\SIA\bin\Debug\cConexion.xml
 C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\SIA\obj\Debug\Window1.g.vb
 C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\SIA\obj\Debug\Window1.baml
+C:\Users\odrog\Source\Repos\SIA\SIA\bin\Debug\SIA.exe.config
+C:\Users\odrog\Source\Repos\SIA\SIA\obj\Debug\SIA.exe
+C:\Users\odrog\Source\Repos\SIA\SIA\obj\Debug\SIA.xml
+C:\Users\odrog\Source\Repos\SIA\SIA\obj\Debug\SIA.pdb
