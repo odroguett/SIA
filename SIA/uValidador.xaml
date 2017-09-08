@@ -1,0 +1,36 @@
+﻿<Window x:Name="uValidador1" x:Class="uValidador"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SIA"
+        mc:Ignorable="d" Height="387" Width="349" Background="#FFB2CBFF" BorderBrush="#FFB2CBFF" >
+    <Grid x:Name="grValidador" Margin="0,0,2,4" Background="#FF0050F7">
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="88*"/>
+            <ColumnDefinition Width="94*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txtTitulo" TextWrapping="Wrap" Style="{DynamicResource TextBlockStyle1}" Margin="10,8,10,317" Foreground="#FFFDFDFD" TextDecorations="{x:Null}" FontStyle="Italic" Background="#FF0050F7" Padding="0,0,0,2" Grid.ColumnSpan="3" FontWeight="Bold"/>
+        <RichTextBox x:Name="txtError" HorizontalAlignment="Left" Height="267" Margin="10,40,0,0" VerticalAlignment="Top" Width="319" Background="#FF0050F7" Grid.ColumnSpan="3" Foreground="#FFEAEBF0" FontWeight="Bold" BorderBrush="#FF0024C5">
+            <FlowDocument>
+                <Paragraph>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="cmdCerrar" Content="Cerrar"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0,312,10,10"  Grid.Column="2" HorizontalAlignment="Right" Width="49" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            
+        </Button>
+
+
+    </Grid>
+</Window>

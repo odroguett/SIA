@@ -1,0 +1,9 @@
+C:\APPS\SRVW.NET\SRVW\Componentes\cConexion.dll
+C:\APPS\SRVW.NET\SRVW\Componentes\cConexion.pdb
+C:\APPS\SRVW.NET\SRVW\Componentes\cConexion.xml
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Release\ResolveAssemblyReference.cache
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Release\cConexion.Resources.resources
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Release\srvConexion.vbproj.GenerateResource.Cache
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Release\cConexion.dll
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Release\cConexion.xml
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Release\cConexion.pdb

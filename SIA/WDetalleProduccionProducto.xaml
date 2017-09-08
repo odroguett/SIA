@@ -1,0 +1,75 @@
+﻿<Window x:Name="wDetalleProduccionProducto" x:Class="WDetalleProduccionProducto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Detalle Produccion" Height="272.997" Width="542.217" Background="#FF062761" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,49">
+        <Canvas x:Name="cvProduccionProducto" Height="240" VerticalAlignment="Top" HorizontalAlignment="Left" Width="533" Margin="0,0,0,-63">
+            <Button x:Name="cmdCancelar" Content="Salir" Height="26" Canvas.Top="195" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="455" >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <DataGrid x:Name="grdProductos" Height="132" Canvas.Top="89" Width="440" AlternatingRowBackground="#FFD8F3F5" SelectedValuePath="CODIGO_PROVEEDOR" Canvas.Left="10" Foreground="#FF02002E"/>
+            <TextBlock x:Name="tbDetalle" Height="22" TextWrapping="Wrap" Text="Producto" Width="241" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="10" Foreground="#FFF1ECEC" Canvas.Top="8"/>
+            <ComboBox x:Name="cbProducto" Style="{DynamicResource cbStyle}" Height="25" Canvas.Left="10" Canvas.Top="28" Width="240" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="codigo" ItemsSource="{Binding}" BorderBrush="#FFEAD5D5" BorderThickness="0" Foreground="#FF072576"  />
+            <TextBlock x:Name="tbTipoUnidad" Height="22" TextWrapping="Wrap" Text="Tipo Unidad " Width="199" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="256" Foreground="#FFF1ECEC" Canvas.Top="6" RenderTransformOrigin="-0.381,1.045"/>
+            <ComboBox x:Name="cbUnidad" Style="{DynamicResource cbStyle}" Height="25" Canvas.Left="255" Canvas.Top="28" Width="195" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="unidad" ItemsSource="{Binding}" BorderBrush="#FFEAD5D5" BorderThickness="0" Foreground="#FF072576"  />
+            <TextBlock x:Name="tbCantidad" Height="22" TextWrapping="Wrap" Text="Cantidad " Width="55" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="455" Foreground="#FFF1ECEC" RenderTransformOrigin="0.154,0.682" Canvas.Top="8"/>
+            <TextBox x:Name="txtCantidad" Height="25"  Canvas.Top="28" Width="59" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="455"  Text="{Binding Cantidad1, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" RenderTransformOrigin="1.111,0.556"  />
+            <Button x:Name="cmdModificar" Content="Modificar" Height="26" Canvas.Top="58" Width="62"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="73"  >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cmAgregar" Content="Agregar" Height="26" Canvas.Top="58" Width="58"  RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="10"  >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cmdEliminar" Content="Eliminar" Height="26" Canvas.Top="58" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="140"  >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cmdLimpiar" Content="Limpiar"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0"  Canvas.Left="203" Canvas.Top="58" Height="26" Width="59"  >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cmdImportar" Content="Importar" Height="26" Canvas.Top="89" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="455"  >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cmdExportar" Content="Exportar" Height="26" Canvas.Top="120" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="455"  >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+        </Canvas>
+
+    </Grid>
+</Window>

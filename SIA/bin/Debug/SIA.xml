@@ -1,0 +1,233 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SIA
+</name>
+</assembly>
+<members>
+<member name="T:SIA.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:SIA.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:SIA.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:SIA.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:SIA.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:SIA.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:SIA.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SIA.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SIA.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:SIA.UBodegas">
+<summary>
+UBodegas
+</summary>
+</member>
+<member name="M:SIA.UBodegas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.UClientes">
+<summary>
+UClientes
+</summary>
+</member>
+<member name="M:SIA.UClientes.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.UInventario">
+<summary>
+UInventario
+</summary>
+</member>
+<member name="M:SIA.UInventario.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.uMantenciones">
+<summary>
+uMantenciones
+</summary>
+</member>
+<member name="M:SIA.uMantenciones.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.UProduccion">
+<summary>
+UProduccion
+</summary>
+</member>
+<member name="M:SIA.UProduccion.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.UProductos">
+<summary>
+UProductos
+</summary>
+</member>
+<member name="M:SIA.UProductos.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.uProveedores">
+<summary>
+uProveedores
+</summary>
+</member>
+<member name="M:SIA.uProveedores.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.uValidador">
+<summary>
+uValidador
+</summary>
+</member>
+<member name="M:SIA.uValidador.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.UVentas">
+<summary>
+UVentas
+</summary>
+</member>
+<member name="M:SIA.UVentas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.WDetalleBodega">
+<summary>
+WDetalleBodega
+</summary>
+</member>
+<member name="M:SIA.WDetalleBodega.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.WDetalleInventario">
+<summary>
+WDetalleInventario
+</summary>
+</member>
+<member name="M:SIA.WDetalleInventario.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.WDetalleProduccionProducto">
+<summary>
+WDetalleProduccionProducto
+</summary>
+</member>
+<member name="M:SIA.WDetalleProduccionProducto.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.WGastos">
+<summary>
+WGastos
+</summary>
+</member>
+<member name="M:SIA.WGastos.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.Window1">
+<summary>
+Window1
+</summary>
+</member>
+<member name="M:SIA.Window1.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.WVentas">
+<summary>
+WVentas
+</summary>
+</member>
+<member name="M:SIA.WVentas.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:SIA.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:SIA.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:SIA.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:SIA.MainWindow">
+<summary>
+MainWindow
+</summary>
+</member>
+<member name="M:SIA.MainWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,23 @@
+﻿<Application x:Class="Application"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SIA"
+     StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="TextBlockStyle.xaml"/>
+                <ResourceDictionary Source="TextBox.xaml"/>
+                <ResourceDictionary Source="TextBlockStyle1.xaml"/>
+                <ResourceDictionary Source="ButonStyle.xaml"/>
+                <ResourceDictionary Source="StyleCanvas.xaml"/>
+                <ResourceDictionary Source="cbStyle.xaml"/>
+                <ResourceDictionary Source="SBDiccionario.xaml"/>
+                <ResourceDictionary Source="MsgStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,7 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SIA">
+    <Style x:Key="CanvasStyle" TargetType="Canvas">
+        <Setter Property="Background" Value="#FFF0E9E9"/>
+    </Style>
+</ResourceDictionary>

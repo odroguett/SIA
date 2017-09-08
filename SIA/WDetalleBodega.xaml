@@ -1,0 +1,75 @@
+﻿<Window x:Name="wDetalleBodega" x:Class="WDetalleBodega"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SIA"
+        mc:Ignorable="d"
+        Title="Detalle Bodega" Height="314.068" Width="399.157" Background="#FF062761">
+    <Grid x:Name="gridDetalleBodega" Margin="4,0,62,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="43*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="cvDetalleBodega" HorizontalAlignment="Left" Width="385" Margin="0,0,-49,-2" Grid.ColumnSpan="2" Height="285" VerticalAlignment="Top" Background="#FF062761">
+            <TextBox x:Name="txtNumeroIngreso" Height="25"  Canvas.Top="20" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA"  Text="{Binding NumeroIngreso, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" Canvas.Left="10"  />
+            <TextBlock x:Name="tbNumeroIngreso" Height="22" TextWrapping="Wrap" Text="Numero Ingreso" Width="75" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Foreground="#FFF1ECEC" RenderTransformOrigin="0.143,0.591" Canvas.Left="10"/>
+            <TextBlock x:Name="tbDetalle" Height="22" TextWrapping="Wrap" Text="Tipo Producto" Width="176" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="95" Foreground="#FFF1ECEC"/>
+            <ComboBox x:Name="cbDetalle" Style="{DynamicResource cbStyle}" Height="25" Canvas.Left="95" Canvas.Top="20" Width="171" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="codigo" ItemsSource="{Binding}" BorderBrush="#FFEAD5D5" BorderThickness="0" Foreground="#FF072576"  />
+            <TextBox x:Name="txtValorTotal" Height="25"  Canvas.Top="20" Width="99" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="272"  Text="{Binding Valor, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" RenderTransformOrigin="-0.714,0.84"  />
+            <TextBox x:Name="txtTotalProductos" Height="25"  Canvas.Top="67" Width="99" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="10"  Text="{Binding TotalProductos, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" RenderTransformOrigin="-0.714,0.84"  />
+            <TextBox x:Name="txtValorUNCompra" Height="25"  Canvas.Top="67" Width="114" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="114"  Text="{Binding ValorUnCompra, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" RenderTransformOrigin="-0.714,0.84"  />
+            <TextBlock x:Name="tbTipoUnidad1" Height="22" TextWrapping="Wrap" Text="Tipo Unidad 1" Width="250" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="11" Foreground="#FFF1ECEC" Canvas.Top="92" RenderTransformOrigin="-0.381,1.045"/>
+            <TextBlock x:Name="tbCantidad1" Height="22" TextWrapping="Wrap" Text="Cantidad 1" Width="96" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="270" Foreground="#FFF1ECEC" RenderTransformOrigin="0.154,0.682" Canvas.Top="92"/>
+            <TextBlock x:Name="tbValortTotal" Height="22" TextWrapping="Wrap" Text="Valor  Total" Width="100" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="276" Foreground="#FFF1ECEC" RenderTransformOrigin="0.154,0.682" Canvas.Top="-2"/>
+
+            <TextBlock x:Name="tbCantidad2" Height="22" TextWrapping="Wrap" Text="Cantidad 2" Width="96" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="270" Foreground="#FFF1ECEC" RenderTransformOrigin="0.154,0.682" Canvas.Top="139"/>
+            <TextBlock x:Name="tbValorUnitario" Height="22" TextWrapping="Wrap" Text="Valor Unitario" Width="100" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="233" Foreground="#FFF1ECEC" Canvas.Top="45" RenderTransformOrigin="-0.381,1.045"/>
+            <TextBox x:Name="txtValorUnitario" Height="25"  Canvas.Top="67" Width="99" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="234"  Text="{Binding ValorUnitario, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" RenderTransformOrigin="-0.714,0.84"  />
+            <ComboBox x:Name="cbUnidad1" Style="{DynamicResource cbStyle}" Height="25" Canvas.Left="11" Canvas.Top="114" Width="255" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="unidad" ItemsSource="{Binding}" BorderBrush="#FFEAD5D5" BorderThickness="0" Foreground="#FF072576"  />
+            <TextBox x:Name="txtCantidad1" Height="25"  Canvas.Top="114" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="270"  Text="{Binding Cantidad1, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"  />
+            <ComboBox x:Name="cbUnidad2" Style="{DynamicResource cbStyle}" Height="25" Canvas.Left="9" Canvas.Top="161" Width="255" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="unidad" ItemsSource="{Binding}" BorderBrush="#FFEAD5D5" BorderThickness="0" Foreground="#FF072576"  />
+            <TextBlock x:Name="tbUnidad2" Height="22" TextWrapping="Wrap" Text="Tipo Unidad 2" Width="250" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="9" Foreground="#FFF1ECEC" Canvas.Top="139" RenderTransformOrigin="-0.381,1.045"/>
+            <TextBox x:Name="txtCantidad2" Height="25"  Canvas.Top="161" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="271"  Text="{Binding Cantidad2, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"  />
+            <TextBlock x:Name="tbUnidad3" Height="22" TextWrapping="Wrap" Text="Tipo Unidad 3" Width="250" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="15" Foreground="#FFF1ECEC" Canvas.Top="187" RenderTransformOrigin="-0.381,1.045"/>
+            <TextBlock x:Name="tbCantidad3" Height="22" TextWrapping="Wrap" Text="Cantidad 3" Width="96" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="270" Foreground="#FFF1ECEC" RenderTransformOrigin="0.154,0.682" Canvas.Top="186"/>
+            <ComboBox x:Name="cbUnidad3" Style="{DynamicResource cbStyle}" Height="25" Canvas.Left="11" Canvas.Top="209" Width="255" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="unidad" ItemsSource="{Binding}" BorderBrush="#FFEAD5D5" BorderThickness="0" Foreground="#FF072576"  />
+            <TextBox x:Name="txtCantidad3" Height="25"  Canvas.Top="208" Width="96" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="272"  Text="{Binding Cantidad3, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" RenderTransformOrigin="0.462,0.071"  />
+            <TextBlock x:Name="tbTotalProductos" Height="22" TextWrapping="Wrap" Text="Total Productos" Width="100" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="9" Foreground="#FFF1ECEC" Canvas.Top="45" RenderTransformOrigin="-0.381,1.045"/>
+            <TextBlock x:Name="tbValorUnitario_Copy" Height="22" TextWrapping="Wrap" Text="Valor Un Compra" Width="115" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="113" Foreground="#FFF1ECEC" Canvas.Top="45" RenderTransformOrigin="-0.381,1.045"/>
+            <Button x:Name="cmAgregar" Content="Agregar" Height="26" Canvas.Top="240" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="11"  >
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="cmdCancelar" Content="Cancelar" Height="26" Canvas.Top="238" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="308"  >
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="cmdLimpiar" Content="Limpiar"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0"  Canvas.Left="78" Canvas.Top="240" Height="26" Width="60"  >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.281"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+                <Button.Background>
+                    <ImageBrush/>
+                </Button.Background>
+            </Button>
+        </Canvas>
+
+    </Grid>
+</Window>

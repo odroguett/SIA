@@ -1,0 +1,25 @@
+C:\APPS\SRVW.NET\SRVW\Componentes\cConexion.dll
+C:\APPS\SRVW.NET\SRVW\Componentes\cConexion.pdb
+C:\APPS\SRVW.NET\SRVW\Componentes\cConexion.xml
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Debug\ResolveAssemblyReference.cache
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Debug\cConexion.Resources.resources
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Debug\srvConexion.vbproj.GenerateResource.Cache
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Debug\cConexion.dll
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Debug\cConexion.xml
+C:\APPS\SRVW.NET\SRVW\srvConexion\obj\Debug\cConexion.pdb
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\srvConexion.vbprojResolveAssemblyReference.cache
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\cConexion.Resources.resources
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\srvConexion.vbproj.GenerateResource.Cache
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\cConexion.dll
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\cConexion.xml
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\cConexion.pdb
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\MySql.Data.dll
+C:\Users\odroguett\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\MySql.Data.xml
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\Componentes\cConexion.dll
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\Componentes\cConexion.pdb
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\Componentes\cConexion.xml
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\srvConexion.vbprojResolveAssemblyReference.cache
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\cConexion.Resources.resources
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\srvConexion.vbproj.GenerateResource.Cache
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\cConexion.xml
+C:\Users\odrog\Documents\Visual Studio 2015\Projects\SIA\srvConexion\obj\Debug\cConexion.pdb

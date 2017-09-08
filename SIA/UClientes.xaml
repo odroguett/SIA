@@ -1,0 +1,94 @@
+﻿<UserControl x:Name="uClientes" x:Class="UClientes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SIA"
+            Height="440" Width="535" >
+    <Canvas x:Name="cvClientes" Height="440" VerticalAlignment="Bottom">
+        <DataGrid x:Name="grdClientes" Height="176" Canvas.Top="254" Width="443" AlternatingRowBackground="#FFD8F3F5" Canvas.Left="8" SelectedValuePath="CODIGO_PROVEEDOR"/>
+        <TextBox x:Name="txtCod" Height="25"  Canvas.Top="53" Width="80" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="10"  Text="{Binding Codigo, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}"  />
+        <TextBox x:Name="txtRut"  Height="25"  Canvas.Top="53" Width="117" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="95" RenderTransformOrigin="0.681,3" Text="{Binding RutCliente, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+        <TextBlock x:Name="tbCodigo" Height="22" TextWrapping="Wrap" Text="Codigo Proveedor" Canvas.Top="31" Width="80" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="10" Foreground="#FFF1ECEC"/>
+        <TextBlock x:Name="tbDescripcion"  Height="22" TextWrapping="Wrap" Text="Descripción" Width="295" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="White" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="353" RenderTransformOrigin="0.929,0.295" Canvas.Top="-130"/>
+        <TextBox x:Name="txtDes"  Height="25"  Canvas.Top="53" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="217" />
+
+        <TextBlock x:Name="tbRutCliente" Height="22" TextWrapping="Wrap" Text="Rut" Width="117" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFEFF6FD" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="95" RenderTransformOrigin="0.475,-0.727" Canvas.Top="31"  />
+        <TextBox x:Name="txtDireccion"  Height="25"  Canvas.Top="100" Width="328" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="11" />
+        <ComboBox x:Name="cbComuna" Style="{DynamicResource cbStyle}" Height="25" Canvas.Left="344" Canvas.Top="100" Width="174" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="comuna" ItemsSource="{Binding}" BorderBrush="#FFEAD5D5" BorderThickness="0" Foreground="#FF072576"  />
+        <ComboBox x:Name="cbCiudad" Style="{DynamicResource cbStyle}" Height="22" Canvas.Left="11" Canvas.Top="147" Width="164" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="ciudad" ItemsSource="{Binding}"/>
+        <TextBlock x:Name="tbComuna" Height="22" TextWrapping="Wrap" Text="Comuna" Canvas.Top="78" Width="163" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="White" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="353" RenderTransformOrigin="0.475,-0.727"/>
+        <TextBlock x:Name="tbRegion" Height="22" TextWrapping="Wrap" Text="Región" Canvas.Top="121" Width="150" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFEFF3F7" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="187" RenderTransformOrigin="0.475,-0.727"/>
+        <ComboBox x:Name="cbRegion" Text="{Binding SelectedItem.REGION, ElementName=grdClientes}" Style="{DynamicResource cbStyle}" Height="22" Canvas.Left="180" Canvas.Top="148" Width="156" RenderTransformOrigin="1.448,-0.136" DisplayMemberPath="descripcion" SelectedValuePath="region" ItemsSource="{Binding}"  >
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF11AEDA" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <TextBlock x:Name="tbFono" Height="22" TextWrapping="Wrap" Text="Teléfono" Canvas.Top="125" Width="173" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFE2ECF5" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="344" RenderTransformOrigin="0.475,-0.727"/>
+        <TextBox x:Name="txtTelefono" Height="21"  Canvas.Top="147" Width="176" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="341" RenderTransformOrigin="0.681,3" Text="{Binding Telefono, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+        <TextBox x:Name="txtCelular" Height="25"  Canvas.Top="193" Width="163" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="11" RenderTransformOrigin="0.681,3" Text="{Binding Celular, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+        <TextBlock x:Name="tbMail" Height="23" TextWrapping="Wrap" Text="Mail" Canvas.Top="170" Width="336" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFF9F9F9" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="179" RenderTransformOrigin="0.475,-0.727"/>
+        <TextBox x:Name="txtMail" Height="25"  Canvas.Top="193" Width="337" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{DynamicResource TextBoxStyle}"  Margin="0" BorderThickness="1" FontSize="12" Background="#FFEEECDF" BorderBrush="#FFC4B8EA" SelectionBrush="#FFC4B8EA" Canvas.Left="179" Text="{Binding Mail, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+        <TextBlock x:Name="tbCiudad" Height="22" TextWrapping="Wrap" Text="Ciudad" Canvas.Top="125" Width="164" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFDBE1E8" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="11" RenderTransformOrigin="0.475,-0.727"/>
+        <TextBlock x:Name="tbDireccion" Height="22" TextWrapping="Wrap" Text="Dirección Cliente" Canvas.Top="78" Width="326" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFE8EFF5" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="10" RenderTransformOrigin="0.475,-0.727"/>
+
+        <TextBlock x:Name="tbCelular" Height="22" TextWrapping="Wrap" Text="Celular" Canvas.Top="169" Width="163" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFE2ECF5" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="9" RenderTransformOrigin="0.475,-0.727"/>
+        <TextBlock x:Name="tbDescripcion1" Height="22" TextWrapping="Wrap" Text="Descripcion" Width="295" Style="{DynamicResource TextBlockStyle1}" Margin="0" Foreground="#FFEFF6FD" TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="217" RenderTransformOrigin="0.475,-0.727" Canvas.Top="31"  />
+        <Button x:Name="cmAgregar" Content="Agregar" Height="26" Canvas.Top="223" Width="58"  RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="11"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="cmdModificar" Content="Modificar" Height="26" Canvas.Top="223" Width="58"  RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="74"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="cmdEliminar" Content="Eliminar" Height="26" Canvas.Top="223" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="137"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="cmdLimpiar" Content="Limpiar"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0"  Canvas.Left="200" Canvas.Top="223" Height="26" Width="59"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="cmdImportar" Content="Importar" Height="26" Canvas.Top="254" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="459"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="cmdExportar" Content="Exportar" Height="26" Canvas.Top="306" Width="58"   RenderTransformOrigin="0.495,1.442" Style="{DynamicResource ButonStyle}" Margin="0" Canvas.Left="458" >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="tbCodigo_Copy" Height="22" TextWrapping="Wrap" Text="CLIENTE" Canvas.Top="4" Width="58" Style="{DynamicResource TextBlockStyle1}" Margin="0"  TextDecorations="{x:Null}" FontStyle="Italic" Padding="0,0,0,2" Canvas.Left="11" Foreground="#FFF1ECEC"/>
+
+
+
+    </Canvas>
+</UserControl>

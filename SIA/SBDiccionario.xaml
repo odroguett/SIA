@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:SIA">
+    <Storyboard x:Key="sbEscondeMenu" >
+        <ThicknessAnimation Storyboard.TargetProperty="Margin" From="0,0,0,0" To="-150,0,0,0" AccelerationRatio=".9" Duration="0:00:1" />
+    </Storyboard>
+    <Storyboard x:Key="sbHabilitaMenu">
+        <ThicknessAnimation Storyboard.TargetProperty="Margin" From="-150,0,0,0" To="0,0,0,0" DecelerationRatio=".9" Duration="0:0:1" />
+    </Storyboard>
+    <Storyboard x:Name="sbOpacidad" x:Key="Opacidad">
+        <DoubleAnimation Duration="00:00:01.50" From="1" To="0.3" Storyboard.TargetProperty="Opacity"  />
+    </Storyboard>
+    <Storyboard x:Name="Aclarar" x:Key="Aclarar">
+        <DoubleAnimation Duration="00:00:01.50" From="0.1" To="1" Storyboard.TargetProperty="Opacity"  />
+    </Storyboard>
+    <Storyboard x:Name="AclararValidador" x:Key="AclararValidador">
+        <DoubleAnimation Duration="00:00:01.50" From="0.6" To="1" Storyboard.TargetProperty="Opacity"  />
+    </Storyboard>
+    <Storyboard x:Name="sbVisible" x:Key="Visible">
+        <DoubleAnimation Duration="00:00:01.50" From="0.0" To="1" Storyboard.TargetProperty="Opacity"  />
+    </Storyboard>
+    <Storyboard x:Name="sbInvisible" x:Key="Invisible">
+        <DoubleAnimation Duration="00:00:01.50" From="1" To="0.0" Storyboard.TargetProperty="Opacity"  />
+    </Storyboard>
+</ResourceDictionary>
