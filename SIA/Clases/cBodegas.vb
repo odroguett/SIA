@@ -3,7 +3,7 @@ Imports cConexion
 
 
 ''' <summary>
-''' Pruyeba de git
+''' Pruyeba de gitttttt
 ''' </summary>
 
 Public Class cBodegas
